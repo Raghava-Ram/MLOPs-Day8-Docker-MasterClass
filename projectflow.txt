@@ -1,0 +1,25 @@
+Install Docker Desktop
+
+Sign in to Dockerhub and Docker Desktop
+
+Docker Desktop:
+
+> Check docker install: cli -> "docker"
+
+> Pull the hello-world image and run it
+
+Assure that you're logged in: docker login
+
+Build docker image: docker build -t mlops-docker-demo.
+
+Run the container: docker run -p 5000:5000 mlops-docker-demo
+
+Tag your image: docker tag mlops-docker-demo raghavaram139/mlops-docker-demo:latest1
+
+Assure that you're logged in: docker login
+
+Push image to dockerhub: docker push raghavaram139/mlops-docker-demo:latest1
+
+Pull image from dockerhub: docker pull raghavaram139/mlops-docker-demo:latest1
+
+Run the Pulled image: docker run -p 5000:5000 raghavaram139/mlops-docker-demo:latest1
